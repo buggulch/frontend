@@ -1,0 +1,246 @@
+nav h1 {
+	color:black;
+	background-color: lightgrey;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-left: 0px;
+	padding: 0px;
+	font-size: 65px;
+	border: 0px solid;
+	text-align: left;
+	
+}
+nav h2 {color: black;
+	background-color: lightgrey;
+	margin-top: 3px;
+	margin-bottom:0px;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 20px;
+	}
+	
+nav ul {
+  list-style-type: none;
+  margin: 3;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding: 8px;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 4px 6px;
+  color: blue;
+}
+
+nav a {
+	color: blue;
+}
+
+.main {
+
+	!background-color:lightblue;
+	margin-top: 0px;
+	margin-bottom: 150px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px;
+	!width: calc(100% - 150px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	!justify-content: flex-start;
+}
+
+img {
+	margin: 10px;
+	width: 200px;
+}
+
+.background {
+	!background-image:url("../images/canoe_to_camp/lake_tahoe.png");
+	!background-repeat: repeat;
+	margin-top: 0px;
+	margin-bottom: 150px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px;
+} 
+
+body {
+	background-image:url("../images/canoe_to_camp/lake_tahoe.png");
+	background-repeat: repeat;
+	margin-top: 0px;
+	margin-bottom: 150px;
+	margin-right: 75px;
+	margin-left: 75px;
+	padding: 0px;
+}
+
+.title {
+	width: 70%;
+	border-radius: 20px;
+}
+
+.content {
+	display: flex;
+	width: calc(70% - 20px);
+	flex-direction: column;
+	padding: 20px;
+	background-color:lightgrey;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: .5;
+	padding-top: 20px;
+}
+
+.right {
+	flex-grow: .5;
+}
+
+
+.inner {
+	
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.spacer {
+	height: 70px;
+
+}
+
+.wistful {
+	font-size: 15px;
+	margin: 10px 10px;
+	line-height: 20px;
+	text-justify: inter-word;
+}
+
+.wistful::first-letter {
+	font-size: 30px;
+}
+
+.chair {
+	height: 200px;
+	width: fit-content;
+}
+
+.cat {
+	height: fit-content;
+	width: calc(50% - 10px);
+}
+
+.dumpy { 
+	width: calc(100% - 20px);
+	height: fit-content;
+}
+
+.flip {
+	width: calc(100% - 60px);
+}
+
+.solo {
+	margin-left: 40px;
+}
+
+.flat {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	width: 600px
+}
+
+.text {
+	text-align: center;
+	font-weight: 1000;
+}
+
+h1 {
+	color:black;
+	background-color: lightgrey;
+	!text-shadow: 2px 1px green;
+	!border: 3px solid;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 5px;
+	!font-size: 75px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+/* h2 {color: black;
+	background-color: lightgrey;
+	margin-top: 3px;
+	margin-bottom:0px;
+	text-align: center;
+	!background-color: lightgrey;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 15px;
+	}
+	
+h3 {color: black;
+	background-color: lightgrey;
+	margin-top: 3px;
+	margin-bottom:0px;
+	!background-color: lightgrey;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 30px;
+	}
+
+!p {color: black;
+		background-color: white;
+		border: 3px solid;
+		}
+!ul {color: black;
+		background-color: white;
+		}
+a {color: blue;
+	} */
+div.img {
+	!margin-top: 10px;
+	!margin-bottom: 10px;
+	!border: 3px solid;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-color:lightgrey;
+	padding: 5px;
+	font-size: 15px;
+}
+/* div.sect {
+	border: 3px solid;
+	background-color: lightgrey;
+	
+	!margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	!margin-right: 150px;
+	!margin-left: 150px;
+} */
+
+img2 {
+}
