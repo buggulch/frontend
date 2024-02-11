@@ -39,4 +39,31 @@ h2 {
 	margin-bottom:0px;
 	font-size: 25px;
 	padding: 5px;
+	font-weight: none;
 	}
+	
+div.sect {
+	background-color: lightgrey;
+	border: 3px solid;
+	margin-top: 5px;
+	margin-bottom:0px;
+	font-size: 25px;
+	padding: 5px;
+	font-weight: none;
+	}
+	
+table {
+	border: 0px solid black;
+	width: 100%;
+}
+
+th {
+	border: 0px solid black;
+	padding: 3px;
+	text-align: left;
+}
+	
+td {
+	border: 0px solid black;
+	padding: 3px;
+}
