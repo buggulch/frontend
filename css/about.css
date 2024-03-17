@@ -19,9 +19,8 @@ div.subtitle {
 body {
 	background-image:url("../images/about/high_rock.png");
 	background-repeat: repeat;
-	margin-right: 75px;
-	margin-left: 75px;
-}
+	margin-right: 7%;
+	margin-left: 7%;
 
 h1 {
 	background-color: lightgrey;
