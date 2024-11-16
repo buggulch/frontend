@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- tab and search result title -->
+		<title>Articles - buggulch.com</title>
+	
+		<!-- page description -->
+		<meta name="description" content="How-tos, trip planning resources, and other write-ups focused on outdoor adventure.">
+
+		<!-- author -->
+		<meta name="author" content="John Cunningham">
+		
+		<!-- permits scaling for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- specifying character set -->
+		<meta charset="utf-8">
+		
+		<!-- links stylesheet -->
+		<link rel="stylesheet" href="css\tools.css">
+		
+		<!-- Analytics Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EL6CGFTBRT"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-EL6CGFTBRT');
+		</script>
+		
+	</head>
+
+    <body>
+
+		<div class="title">
+			<a href="index.html" style="text-decoration: none; color: black;"> buggulch.com</a><br>
+		</div>	
+			
+		<div class="subtitle">
+			Outdoor adventure website
+		</div>	  
+
+    <h1>Tide Planning Tool</h1>
+
+    <div class="sect">
+
+    <h2>Description:</h2>
+
+    Low tides offer unique recreation opportunities. Secret beaches, fishing spots, 
+    clambeds, tidepools, and many more places typically blocked by surf become 
+    accessible. Additionally, more exposed hard and wet sand makes it easier to hike, 
+    bike, and drive on the beach.  While low tides generally occur twice per day, 
+    they are not always low enough or at the right time for recreation.<br><br>
+ 
+    The Tide Planning Tool is a web application that identifies tides that fit 
+    the requirements of your coastal adventure. Enter your desired location, tide 
+    threshold, and time requirements, and compatible tides will be returned. This 
+    application is particularly useful because it allows you to find tides based on the day 
+    of the week and time of day. Most people prefer tides below 0ft that 
+    occur on weekends within daylight hours. The application can also be used 
+    to find high tides. All tide data is sourced from the National Weather Service API.<br><br>
+
+    <h2>Tide Planning Tool:</h2>
+    
+    Fill out the form below, press submit, and tides will be returned.<br><br>
+
+    <!-- Define html form using camelCase notation, the typical javascript naming notation -->
+    <form id="tideForm">
+        
+        <!-- Location Input -->
+
+        <div class="desc">
+            Choose a location. All options correspond to NOAA tide stations.<br>
+        </div>
+
+        <label>Location:</label>
+        <select id="location" name="location" required>
+            <option value="" selected disabled hidden>Enter Location</option>
+            <option value="Alameda, CA">Alameda, CA</option>
+            <option value="San Francisco, CA">San Francisco, CA</option>
+            <option value="Redwood City, CA">Redwood City, CA</option>
+            <option value="Crescent City, CA">Crescent City, CA</option>
+            <option value="San Diego, CA">San Diego, CA</option>
+            <option value="Monterey, CA">Monterey, CA</option>
+            <option value="Santa Barbara, CA">Santa Barbara, CA</option>
+            <option value="Santa Monica, CA">Santa Monica, CA</option>
+            <option value="Port San Luis, CA">Port San Luis, CA</option>
+            <option value="Arena Cove, CA">Arena Cove, CA</option>
+            <option value="Garibaldi, OR">Garibaldi, OR</option>
+            <option value="Seattle, WA">Seattle, WA</option>
+            <option value="Charleston, SC">Charleston, SC</option>
+            <option value="Montauk, NY">Montauk, NY</option>
+            <option value="Portland, ME">Portland, ME</option>
+        </select>
+        <br><br>
+
+        <!-- Tide Type Input -->
+
+        <div class="desc">
+            Choose to return low or high tides.<br>
+        </div>
+
+        <label>Tide Type:</label>
+        <input type="radio" id="lowTide" name="tideType" value="Low" required>
+        <label for="lowTide">Low</label>
+        <input type="radio" id="highTide" name="tideType" value="High" required>
+        <label for="highTide">High</label><br><br> 
+     
+
+        <!-- Tide Height Input -->
+
+        <div class="desc">
+            Choose the tide height threshold. If 'Low' tide is selected, returned tides will be less than or equal to 
+            this value. If 'High' tide is selected, returned tides will be greater than or equal to this value.<br>
+        </div>
+
+        <label for="tideHeight">Tide Height (ft):</label>
+        <input type="number" id="tideHeight" name="tideHeight" placeholder="Enter Tide Height" step="0.1" required><br><br>
+
+        <!-- Date Range Input -->
+
+        <div class="desc">
+            Choose the date range for tides to be within.<br>
+        </div>
+
+        <label for="beginDate">Start Date:</label>
+        <input type="date" id="beginDate" name="beginDate" required><br><br>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <!-- Days of the Week Input -->
+
+        <div class="desc">
+            Choose the days of the week on which the tides must fall.<br>
+        </div>
+
+        <label>Days of the Week:</label><br>
+        <input type="checkbox" name="days" value="Monday"> Monday<br>
+        <input type="checkbox" name="days" value="Tuesday"> Tuesday<br>
+        <input type="checkbox" name="days" value="Wednesday"> Wednesday<br>
+        <input type="checkbox" name="days" value="Thursday"> Thursday<br>
+        <input type="checkbox" name="days" value="Friday"> Friday<br>
+        <input type="checkbox" name="days" value="Saturday"> Saturday<br>
+        <input type="checkbox" name="days" value="Sunday"> Sunday<br><br>
+
+        <!-- Time of Day Input -->
+
+        <div class="desc">
+            Choose the time of day. 'Daylight' returns tides from one hour before 
+            sunrise to one hour after sunset. 'Night' returns tides from one hour 
+            before sunset to one hour after sunrise. 'No Preference' returns tides 
+            at all times of day.<br>
+        </div>
+
+        <label>Time of Day:</label><br>
+        <input type="radio" id="daylight" name="timeOfDay" value="Daylight" required>
+        <label for="daylight">Daylight</label>
+        <input type="radio" id="night" name="timeOfDay" value="Night" required>
+        <label for="night">Night</label>
+        <input type="radio" id="noPreference" name="timeOfDay" value="NoPreference" required>
+        <label for="noPreference">No Preference</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit"><br><br>
+
+        <!-- <div class="desc">
+            (Loading can take a couple minutes)<br>
+        </div> -->
+
+    </form>
+
+    <!-- Loading message -->
+    <div id="loading">Loading... (this can take a couple minutes)</div>
+    
+    <!-- Error message -->
+    <div id="error">Failed to get tide data.</div>
+
+
+    <div id="result"></div>
+
+    <!-- <script> is used to embed javascript within html code -->
+    <script>
+
+        // use "//" to comment in javascript
+
+        // document.getElementById("tideForm") selects html element "tideForm"
+        // addEventListener("submit", function(event) is a listener listening for the submit, meaning it triggers when the user submits the form
+        // event.preventDefault() prevents the default behavior of the form submission. This allows you to handle the form submission with 
+        // JavaScript, such as sending the data via an API without refreshing the page.
+        document.getElementById("tideForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Show the loading message and hide the error message
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('error').style.display = 'none';
+
+            // Retrieving form values (aka the answers to the form)
+            // const declares a variable that cannot be reassigned
+            const location = document.getElementById("location").value;
+            const tideHeight = document.getElementById("tideHeight").value;
+            const beginDate = document.getElementById("beginDate").value;
+            const endDate = document.getElementById("endDate").value;
+
+            // document.querySelectorAll('input[name="days"]:checked') selects all the checkbox elements on the page that have the attribute
+            // name="days" and are currently checked
+            // querySelectorAll returns a NodeList, which is a collection of DOM elements. Although it looks like an array, 
+            // it’s not quite an array
+            // Array.from(...) is used to convert this NodeList into an actual Array that you can use array methods on.
+            // .map() is an array method that loops through each checkbox in the array. For each checkbox it extracts its value (day of the week)
+            const days = Array.from(document.querySelectorAll('input[name="days"]:checked')).map(checkbox => checkbox.value);
+
+            const tideType = document.querySelector('input[name="tideType"]:checked').value;
+
+            const timeOfDay = document.querySelector('input[name="timeOfDay"]:checked').value;
+
+            // This is a simpler, less explicit, way to retrieve form values
+            // const formData = new FormData(this);
+            // const data = Object.fromEntries(formData.entries());
+
+            // This is a json object. It has keys and values (ie "city":"Alameda")
+            // json = javascript object notation
+            const formData = {
+                location,
+                tideHeight,
+                beginDate,
+                endDate,
+                days,
+                tideType,
+                timeOfDay
+            };
+
+            console.log(formData);
+
+            // initiates/sends a fetch request to the URL http://127.0.0.1:5000/submit-form
+            // Flask server retrieves the data in the URL
+            // http://127.0.0.1:5000: Refers to the local machine (localhost) and the port (5000) where the Flask server is running.
+            // By default Flask runs on port 5000 when you start the server
+            // NOTE: This will change when I setup Heroku 
+            // Send a POST request to the Flask server with the form data
+            fetch('https://tide-tool.onrender.com/submit-form', {
+            // fetch('http://127.0.0.1:5000/submit-form', {
+                method: 'POST', // Using POST request to send data to the Flask server
+                headers: {
+                    'Content-Type': 'application/json' // Tells server to expect .json data in the fetch request body
+                },
+                body: JSON.stringify(formData) // Convert the formData object to a JSON string
+            })
+           // Handle the response from the server
+            .then(response => response.json()) // Parse the JSON response from the server
+            .then(data => {
+
+                // Hide the loading message
+                document.getElementById('loading').style.display = 'none';
+
+                // Get the HTML element with the ID 'result' where the table will be displayed
+                const resultElement = document.getElementById("result");
+                resultElement.innerHTML = ""; // Clear any existing content in the result element
+
+                // Create a new HTML table element
+                const table = document.createElement("table");
+
+                // Create a table row element for the header row
+                const headerRow = document.createElement("tr");
+
+                // Define the headers for the table
+                const headers = ["Tide Time", "Day of the week", "Tide height (ft)", "Sunrise", "Sunset"];
+
+                // Loop through each header and create a table header cell (th) for each one
+                headers.forEach(header => {
+                    const th = document.createElement("th"); // Create a table header cell element
+                    th.textContent = header; // Set the text content of the header cell
+                    headerRow.appendChild(th); // Append the header cell to the header row
+                });
+
+                // Append the header row to the table
+                table.appendChild(headerRow);
+
+                // Loop through each row of data in the result
+                data.result.forEach(row => {
+                    // Create a table row element for each row of data
+                    const rowElement = document.createElement("tr");
+
+                    // Define the cells for the current row using the data from the result
+                    const cells = [row["Tide Time"], row["Day of the week"], row["Tide height (ft)"], row["Sunrise"], row["Sunset"]];
+
+                    // Loop through each cell value and create a table cell (td) for each one
+                    cells.forEach(cell => {
+                        const td = document.createElement("td"); // Create a table cell element
+                        td.textContent = cell; // Set the text content of the cell
+                        rowElement.appendChild(td); // Append the cell to the current row
+                    });
+
+                    // Append the current row to the table
+                    table.appendChild(rowElement);
+                });
+
+                // Append the completed table to the result element on the webpage
+                resultElement.appendChild(table);
+            })
+            // Handle any errors that occur during the fetch request
+            .catch((error) => {
+                console.error('Error:', error); // Log the error to the console
+                // Hide the loading message and show the error message
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+            });
+        });
+    </script>
+
+</div>
+
+</body>
+</html>
