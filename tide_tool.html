@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <html>
 	<head>
 		<!-- tab and search result title -->
@@ -63,6 +61,8 @@
     occur on weekends within daylight hours. The application can also be used 
     to find high tides. All tide data is sourced from the National Weather Service API.<br><br>
 
+    <i>See article <a href="articles/tide_tool_works.html" target="blank"> How the Tide Planning Tool works</a> if interested!</i><br><br>
+
     <h2>Tide Planning Tool:</h2>
     
     Fill out the form below, press submit, and tides will be returned.<br><br>
@@ -75,6 +75,8 @@
         <div class="desc">
             Choose a location. All options correspond to NOAA tide stations.<br>
         </div>
+
+        <!-- Location selection choices. Needs to be updated when location_db.csv is updated -->
 
         <label>Location:</label>
         <select id="location" name="location" required>
@@ -167,17 +169,13 @@
         <!-- Submit Button -->
         <input type="submit" value="Submit"><br><br>
 
-        <!-- <div class="desc">
-            (Loading can take a couple minutes)<br>
-        </div> -->
-
     </form>
 
     <!-- Loading message -->
     <div id="loading">Loading... (this can take a couple minutes)</div>
     
     <!-- Error message -->
-    <div id="error">Failed to get tide data.</div>
+    <div id="error">Failed to get tide data. Try pressing 'Submit' again.</div>
 
 
     <div id="result"></div>
@@ -195,6 +193,7 @@
             event.preventDefault();
 
             // Show the loading message and hide the error message
+            // By default these messages are hidden using CSS
             document.getElementById('loading').style.display = 'block';
             document.getElementById('error').style.display = 'none';
 
@@ -217,12 +216,9 @@
 
             const timeOfDay = document.querySelector('input[name="timeOfDay"]:checked').value;
 
-            // This is a simpler, less explicit, way to retrieve form values
-            // const formData = new FormData(this);
-            // const data = Object.fromEntries(formData.entries());
-
             // This is a json object. It has keys and values (ie "city":"Alameda")
             // json = javascript object notation
+
             const formData = {
                 location,
                 tideHeight,
@@ -239,17 +235,21 @@
             // Flask server retrieves the data in the URL
             // http://127.0.0.1:5000: Refers to the local machine (localhost) and the port (5000) where the Flask server is running.
             // By default Flask runs on port 5000 when you start the server
-            // NOTE: This will change when I setup Heroku 
-            // Send a POST request to the Flask server with the form data
+            // NOTE: This has now changed to Render server communication
+
             fetch('https://tide-tool.onrender.com/submit-form', {
+            
+            // Old local host code:
             // fetch('http://127.0.0.1:5000/submit-form', {
+
                 method: 'POST', // Using POST request to send data to the Flask server
                 headers: {
                     'Content-Type': 'application/json' // Tells server to expect .json data in the fetch request body
                 },
                 body: JSON.stringify(formData) // Convert the formData object to a JSON string
             })
-           // Handle the response from the server
+           
+            // Handle the response from the server
             .then(response => response.json()) // Parse the JSON response from the server
             .then(data => {
 
@@ -312,6 +312,8 @@
     </script>
 
 </div>
+
+<!-- Footer code -->
 
 <div align='center'>
     <a href="index.html">
