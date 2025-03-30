@@ -59,7 +59,7 @@
 						<thead>
 							<tr>
 								<th>Column</th>
-								<th>Sort criteria</th>
+								<th>Filter criteria</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -178,12 +178,12 @@
 
 					<p>The “Moon data” sheet lists the time, date, and day of the week of every new and full moon in the next 20 years. Filtering the data allows you to identify new or full moons for a given time period and/or specific days of the week.</p>
 
-					<p>For example, new moons in 2025 that fall on Friday or Saturday can be found with the filter criteria below,</p>
+					<p>For example, new moons in 2025 that occur on Friday or Saturday can be found with the filter criteria below,</p>
 					<table border="1">
 						<thead>
 							<tr>
 								<th>Column</th>
-								<th>Sort criteria</th>
+								<th>Filter criteria</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -252,9 +252,14 @@
 					<p>Back in 2017, when driving home from the Grand Canyon, my buddies and I decided to set up camp off Highway 40 in the Mojave Desert. It was way past sundown and we were tuckered out from the days before, so we said to hell with the tent and laid ourselves down right under the wide-open desert sky. Before long, we noticed shooting stars raining down like we'd never seen before… by far the best stargazing of our lives.</p>
 					<p>Years later, I discovered we had watched the peak of the year’s strongest meteor shower, Geminids, under a near new moon. An incredible coincidence. In efforts to recreate the experience, I started learning more about meteor showers. When I found out that meteor shower peak times and moon phases can be predicted years in advance, I knew I could pinpoint some dates that would display stargazing conditions similar to our night in the Mojave.</p>
 					<p>A google search requesting meteor shower and moon data directed me to celestial event calendars like that published 
-						by <a target="blank" href=https://www.imo.net/resources/calendar/>IMO.org</a>. These calendars give all the needed meteor shower and moon phase data, but the format is not great for analysis and data is generally only provided for the present year. I eventually came across the NASA SKYCAL tool, which provides nicely formatted meteor shower data for any year you choose. Sadly, the moon phase data is not provided for the given meteor shower dates. But, the day of the week of the shower dates is included, which is helpful for trip planning.</p>
-					<p>So I went ahead and individually obtained each of the next twenty years of meteor shower data using the <a target="blank" href="https://eclipse.gsfc.nasa.gov/SKYCAL/SKYCAL.html">NASA SKYCAL tool</a>. I put this data into a Google sheet and asked Chat GPT to format it all into one table. From here, I converted it into a .csv file that could be easily utilized in a Python script. I then asked Chat GPT to create a Python script that calculated the moon illumination percentage for the given meteor shower dates. The script performed the calculations using the ephem Python package. After some minor troubleshooting, I had a spreadsheet with all the meteor showers and corresponding moon phase data for the next 20 years. Lastly, I realized that it could also be useful to have new and full moon data in this format, so in a similar fashion, I utilized NASA SKYCAL and Chat GPT to make the Moon Phase sheet.</p>
-		</div>
+						by <a target="blank" href="https://www.imo.net/resources/calendar"> IMO.org</a>. These calendars give all the needed meteor shower and moon phase data, 
+						but the format is not great for analysis and data is generally only provided for the present year. I eventually came 
+						across the <a target="blank" href="https://eclipse.gsfc.nasa.gov/SKYCAL/SKYCAL.html">NASA SKYCAL tool</a>, which provides nicely formatted meteor shower data for any year you choose. Sadly, the moon phase data is not provided for the given meteor shower dates. But, the day of the week of the shower dates is included, which is helpful for trip planning.</p>
+					<p>So I went ahead and individually obtained each of the next twenty years of meteor shower data using the NASA SKYCAL tool. I put this data into a Google sheet and asked Chat GPT to format it all into one table. From here, I converted it into a .csv file that could be easily utilized in a Python script. I then asked Chat GPT to create a Python script that calculated the moon illumination percentage for the given meteor shower dates. The script performed the calculations using the ephem Python package. After some minor troubleshooting, I had a spreadsheet with all the meteor showers and corresponding moon phase data for the next 20 years. Lastly, I realized that it could also be useful to have new and full moon data in this format, so in a similar fashion, I utilized NASA SKYCAL and Chat GPT to make the Moon Phase sheet.</p>
+		
+					<i>(Date posted: 2025-03-29)</i>
+
+				</div>
 		
 			<footer style='display:flex; justify-content:space-between; margin-top: 15px;'>
 			
