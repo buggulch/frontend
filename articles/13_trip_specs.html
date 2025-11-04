@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		
+		<!-- tab and search result title -->
+		<title>Backpacking trip specs</title>
+	
+		<!-- page description -->
+		<meta name="description" content="A list of backpacking trips with distance and elevation specs.">
+		
+		<!-- author -->
+		<meta name="author" content="John Cunningham">
+		
+		<!-- permits scaling for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- specifying character set -->
+		<meta charset="utf-8">
+		
+		<!-- links stylesheet -->
+		<link rel="stylesheet" href="css\13_trip_specs.css">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+		
+		<!-- Analytics Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EL6CGFTBRT"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-EL6CGFTBRT');
+		</script>
+		
+</head>
+	
+	<body>
+	
+		<div class="title">
+			<a href="../index.html" style="text-decoration: none; color: black;"> buggulch.com</a><br>
+		</div>	
+			
+		<div class="subtitle">
+			Outdoor adventure website
+		</div>	
+	
+		<h1>Backpacking trip data</h1>
+		
+		<div class="sect">
+		
+		<i>This table lists all backpacking trips I’ve completed that were longer than two nights, along with the total distance and elevation gain for each route. 
+		Trip data was collected by mapping the approximate routes on Gaia GPS. Day hikes taken during layover days are included in the trip statistics. 
+		Most routes are primarily on trail, with some sections of off-trail hiking.</i>
+
+		<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+		<table id="tripTable">
+		<thead>
+			<tr>
+			<th>Location</th>
+			<th>Date</th>
+			<th>Days</th>
+			<th>Distance (mi)</th>
+			<th>Elevation (ft)</th>
+			<th>Distance per day (mi/day)</th>
+			<th>Elevation per day (ft/day)</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+		</table>
+
+<script>
+fetch('../trip_log.csv')
+.then(response => {
+    if (!response.ok) throw new Error('Network response was not ok');
+    return response.text();
+})
+.then(csvText => {
+    const parsed = Papa.parse(csvText, {header: true, skipEmptyLines: true});
+    if (parsed.errors.length) {
+        console.error('CSV Parse errors:', parsed.errors);
+        return;
+    }
+    const data = parsed.data;
+    const tbody = document.querySelector("#tripTable tbody");
+    const perDayStats = [];
+
+    data.forEach(row => {
+        const days = (row["Days"] || '').trim();
+        const dist = (row["Distance (mi)"] || '').trim();
+        const elev = (row["Elevation (ft)"] || '').trim();
+        if (days && dist && elev) {
+            const daysNum = parseFloat(days);
+            const distNum = parseFloat(dist);
+            const elevNum = parseFloat(elev);
+            // Calculate per-day stats and store them for later averaging
+            const distPerDay = daysNum ? (distNum / daysNum) : null;
+            const elevPerDay = daysNum ? (elevNum / daysNum) : null;
+            if (distPerDay !== null && elevPerDay !== null) {
+                perDayStats.push({distPerDay, elevPerDay});
+            }
+            const tr = document.createElement('tr');
+            [
+                row["Location"] || '',
+                row["Date"] || '',
+                days,
+                dist,
+                elev,
+                distPerDay !== null ? distPerDay.toFixed(1) : '',
+                elevPerDay !== null ? elevPerDay.toFixed(0) : ''
+            ].forEach(val => {
+                const td = document.createElement('td');
+                td.textContent = val;
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        }
+    });
+
+    // --- Compute averages and add a summary row ---
+    if (perDayStats.length > 0) {
+        const avgDistPerDay = (
+            perDayStats.reduce((sum, e) => sum + e.distPerDay, 0) / perDayStats.length
+        ).toFixed(1);
+        const avgElevPerDay = (
+            perDayStats.reduce((sum, e) => sum + e.elevPerDay, 0) / perDayStats.length
+        ).toFixed(0);
+
+        // Create a tfoot for summary row
+        let tfoot = document.querySelector("#tripTable tfoot");
+        if (!tfoot) {
+            tfoot = document.createElement('tfoot');
+            document.getElementById('tripTable').appendChild(tfoot);
+        }
+        const summaryRow = document.createElement('tr');
+
+        // 5 columns empty, then two columns for averages
+        summaryRow.innerHTML = `
+            <td colspan="5" style="font-weight:bold;text-align:right;">Average per day:</td>
+            <td style="font-weight:bold;">${avgDistPerDay}</td>
+            <td style="font-weight:bold;">${avgElevPerDay}</td>
+        `;
+        tfoot.appendChild(summaryRow);
+    }
+})
+.catch(err => {
+    console.error('Fetch or parse error:', err);
+});
+</script>
+					<i>(Date posted: 2025-11-03)</i>
+
+				</div>
+		
+			<footer style='display:flex; justify-content:space-between; margin-top: 15px;'>
+			
+			<br>
+
+			
+			<div align='center'>
+				<a href="../index.html">
+					<div style='background-color: lightgrey; padding: 5px 10px; width: fit-content; border-radius: 15px;'>Back to home</div>
+				</a>
+			</div>
+
+			<div align="right">
+				<script src="https://efreecode.com/js.js" id="eXF-buggulch-0" async defer></script> 
+			</div>
+			
+		</footer>		
+		
+	</body>		
+	
+</html>			

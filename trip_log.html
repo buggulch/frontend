@@ -63,31 +63,21 @@
 </table>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script>
   async function fetchCSV() {
       try {
           const response = await fetch('trip_log.csv');
-          if (!response.ok) {
-              throw new Error('Network response was not ok ' + response.statusText);
-          }
-          const data = await response.text();
-          return data;
+          if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
+          return await response.text();
       } catch (error) {
           console.error('There has been a problem with your fetch operation:', error);
       }
   }
 
   function parseCSV(data) {
-      const rows = data.split('\n').slice(1); // Remove header row
-      return rows.map(row => {
-          const [location, type, date, , link] = row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
-          return { 
-              location: location.replace(/"/g, ''), 
-              type: type.replace(/"/g, ''), 
-              date: date.replace(/"/g, ''), 
-              link: link ? link.replace(/"/g, '') : null 
-          };
-      });
+      const parsed = Papa.parse(data, { header: true, skipEmptyLines: true });
+      return parsed.data;
   }
 
   function generateTable(trips) {
@@ -95,18 +85,20 @@
       trips.forEach(trip => {
           const row = document.createElement('tr');
           const locationCell = document.createElement('td');
-          if (trip.link) {
-              const link = document.createElement('a');
-              link.href = trip.link;
-              link.textContent = trip.location;
-              locationCell.appendChild(link);
+          const location = trip['Location'] || '';
+          const link = trip['Link'] || '';
+          if (link) {
+              const a = document.createElement('a');
+              a.href = link;
+              a.textContent = location;
+              locationCell.appendChild(a);
           } else {
-              locationCell.textContent = trip.location;
+              locationCell.textContent = location;
           }
           row.appendChild(locationCell);
           row.innerHTML += `
-              <td>${trip.type}</td>
-              <td>${trip.date}</td>
+              <td>${trip['Type of Trip'] || ''}</td>
+              <td>${trip['Date'] || ''}</td>
           `;
           tbody.appendChild(row);
       });

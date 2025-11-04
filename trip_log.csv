@@ -1,114 +1,116 @@
-Location,Type of Trip,Date,People,Link
-"Peeler Lake Loop, Hoover Wilderness","Backpacking","Jul. 26-30, 2007","Scott, Juli, Kaitlin, Kenny, Phyllis and Bret Cunningham",
-"Chain Lakes, Yosemite National Park","Backpacking","2008","Yolland and Cunningham families",
-"Smith Lake, Desolation Wilderness","Backpacking","Jul. 2010","Kenny, Bret, and Phyllis Cunningham",
-"Desolation Wilderness","Backpacking","2011","Kenny, Bret, and Phyllis Cunningham",
-"South Bass Trail, Grand Canyon, AZ","Backpacking","2012","Yolland and Cunningham families",
-"Twin Lakes, Desolation Wilderness","Backpacking","2013","Kenny, Bret, and Phyllis Cunningham",
-"Lake Aloha, Desolation Wilderness","Backpacking","Jun. 2014","Mike McGill, Matt Lane, Zach Reiley",
-"Red Mountain Basin, John Muir Wilderness","Backpacking","Jul. 27-30, 2014","Kenny and Bret Cunningham",
-"Glacier National Park, MT","Cabin","Sep. 2014","Phyllis and Bret Cunningham",
-"Lost Coast Trail, Kings Range Wilderness","Backpacking","Apr. 2015","Matt Lane, Jack Stanger, Zach Reiley",
-"Sawtooth Ridge and Little Slide Canyon, Hoover Wilderness","Backpacking","Jul. 2015","Matt Lane, Jack Stanger, Zach Reiley, Ryan Callahan","trip_log/2015_hoover.html"
-"Green and Summit Lake, Hoover Wilderness","Backpacking","Summer 2015","Kenny and Bret Cunningham",
-"Prewitt Ridge, Big Sur","Car Camping","Feb. 6-7, 2016","Sara Wilson, Fiona Jackson, Nicole, Natalie Cox, Jack Christy, Sid Maurer, Drew Taylor, Chris Farkas, David Krawitz","trip_log/2016_prewitt_ridge.html"
-"Alabama Hills","Car Camping","Feb. 13-15, 2016","Doug Ward, Gavin Shavey, Jason Adam","trip_log/2016_alabama_hills.html"
-"Boronda Ridge, Big Sur","Backpacking","Feb. 27-28, 2016","Max Chacon, Jack Christy, Gavin Shavey, Jason Adam",
-"Trona Pinnacles, Surprise Canyon, Red Rock Canyon State Park","Car Camping","Apr. 1-3, 2016","Max Chacon, Sid Maurer, David Krawitz, Drew Taylor","trip_log/2016_trona.html"
-"Caliente Ridge Rd., Carrizo Plain National Monument","Car Camping","Apr. 16-17, 2016","Doug Ward, Gavin Shavey, Jason Adam, Drew Taylor, Sid Maurer, David Krawitz, Jack Christy",
-"Highway 1, Big Sur","Car Camping","Apr. 23-24, 2016","Drew Taylor, Jack Christy, David Krawitz",
-"Pear Lake, Sequoia National Park","Backpacking","May 27-30, 2016","Sid Maurer, Drew Taylor, Gavin Shavey, Jason Adam",
-"Leavitt Lake, Humboldt-Toiyabe National Forest","Car Camping","Jul. 8-10, 2016","Matt Lane, Ian Good, Julian Billot, Sean Yao",
-"Five Lakes Basin, Tahoe National Forest","Backpacking","Jul. 16-17, 2016","Yolland and Cunningham families",
-"Palisades Creek Trail, Tahoe National Forest","Backpacking","Jul. 30, 2016","Matt Lane, Ian Good, Sean Yao, Michael McGill",
-"John Muir Trail","Backpacking","Aug. 25 - Sept. 12, 2016","Jack Stanger",
-"Cone Peak, Big Sur","Backpacking","Apr. 15-16, 2017","Weston Kramer, Jason Adam",
-"Henry Cowell Redwoods State Park","Campground","May 13-17, 2017","Sid Maurer, Doug Ward, Jack Christy, David Krawitz, Drew Taylor",
-"North Fork Campground","Campground","Jul. 7-8, 2017","Jack Stanger, David Krawitz",
-"Twin Lakes, Desolation Wilderness","Backpacking","Jul. 21-22, 2017","Yolland and Cunningham families",
-"Virginia Pass Loop, Hoover Wilderness","Backpacking","Aug. 2-4, 2017","Matt Lane, Michael McGill","trip_log/2017_virginia_pass.html"
-"Usal Beach, Sinkyone Wilderness","Car Camping","Aug. 18-20, 2017","Sean Yao, Ian Good","trip_log/2017_usal_beach.html"
-"Two Rivers and Sequoia National Park","Cabin","Nov. 4-5, 2017","Doug Ward, David Krawitz",
-"Horseshoe Mesa and Hance Rapids, Grand Canyon, AZ","Backpacking","Dec. 9-14, 2017","Max Chacon, Doug Ward, David Krawitz","trip_log/2017_grand_canyon.html"
-"Mattole Beach, Redwood National Park, and Klamath National Forest","Car Camping","Jan. 1-5, 2018","Sean Yao, Ian Good, Matt Lane, Michael McGill",
-"San Martin Top, Big Sur","Car Camping","Feb. 17-18, 2018","Grey Liedeke, Tony",
-"Temblor Range, Carrizo Plain National Monument","Car Camping","Apr. 14-15, 2018","Madi Noet, Ella Garfield, Chloe, Mason Scharf, Peter Vanderbloomer, David Krawitz, Drew Taylor, Jeff Phungmonkol, Jack Christy",
-"Big Creek Reserve and Plaskett Ridge, Big Sur","Car Camping","May 11-13, 2018","Jack Christy, Drew Taylor, Sid Maurer, David Krawitz",
-"Carrizo Trail, Big Sur","Backpacking","May 25-28, 2018","Drew Taylor, Gavin Shavey, Jason Adam, Doug Ward, Grey Liedtke",
-"Mt Shasta","Mountaineering","Jun. 14-15, 2018","Sid, Sid Z, and Sue Maurer",
-"Ward Lake, John Muir Wilderness","Backpacking","Jul. 27-29, 2018","Alone",
-"Chalfant Lakes, John Muir Wilderness","Backpacking","Sep. 11-15, 2018","Sean Yao, Michael McGill",
-"Foresthill Rd., Tahoe National Forest","Car Camping","Jan. 2-4, 2019","Sean Yao, Matt Lane, Michael McGill",
-"Lopez Canyon, Los Padres National Forest","Backpacking","Jan 19-20, 2019","David Joyner, David Krawitz, Grant Parton, Peter Vanderbloomer",
-"Caliente Peak, Carrizo Plain National Monument","Backpacking","Apr. 7-8, 2019","Jacinta Garcia, Mitch, Grey Liedtke",
-"Arroyo Seco River, Big Sur","Backpacking","Apr. 13-14, 2019","Jason Adam, Gavin Shavey",
-"Silver Peak Wilderness, Big Sur","Backpacking","May 2-5, 2019","Gavin Shavey, Jason Adam",
-"Big Creek Reserve, Big Sur","Day trip","May 18, 2019","Sid Maurer, Drew Taylor, Preston Quilici, Jack Christy, David Krawitz",
-"Alturas Lake, Sawtooth Wilderness, ID","Backpacking","Jun. 29-30, 2019","Alone",
-"Middle Canyon, Salmon Challis National Forest, ID","Day trip","Jul. 5, 2019","Alone",
-"Copper Basin, Salmon Challis National Forest, ID","Car Camping","Jul. 20-22, 2019","Alone",
-"White Cloud Mountains, Salmon Challis National Forest, ID","Backpacking","Jul. 26-28, 2019","John Siegal, Taylor Amato, Ketchum",
-"Big Smoky Creek, Sawtooth National Forest, ID","Car Camping","Aug. 2-3, 2019","Erik Clark, Sean Yao",
-"Pioneer Range, Salmon Challis National Forest, ID","Backpacking","Aug. 9-11, 2019","Alone","trip_log/2019_pioneer_range.html"
-"Lost River Range, Salmon Challis National Forest, ID","Backpacking","Aug. 16-18, 2019","Will",
-"Wheeler Beach, Sinkyone Wilderness","Backpacking","Jan. 1-4, 2020","Matt Lane, Michael McGill, Sean Yao",
-"Sespe Hot Springs, Los Padres National Forest","Backpacking","Apr. 1-5, 2020","Sid Maurer, Mason Scharf","trip_log/2020_sespe.html"
-"La Porte Rd. Loop, Plumas National Forest","Car Camping","Jul. 3-5, 2020","Sean Yao", "trip_log/2020_la_porte.html"
-"Bull Lake Loop, Carson Iceberg Wilderness","Backpacking","Jul. 24-27, 2020","Preston Quilici, David Krawitz",
-"Henness Pass Rd., Tahoe National Forest","Car Camping","Aug. 8-10, 2020","Sid Maurer, Michael Young, Jeff Phungmonkol, Walker Lambert",
-"North Fork American River Canyon, Tahoe National Forest","Car Camping","Aug. 14-16, 2020","Matt Lane, Michael McGill",
-"Sonora Pass to Leavitt Meadows, Emigrant Wilderness","Backpacking","Aug. 30 - Sep. 3, 2020","Preston Quilici, David Krawitz, Doug Ward, Michael Young","trip_log/2020_emigrant.html"
-"Death Valley National Park","Car Camping","Dec. 31, 2020 - Jan. 4, 2021","Matt Lane, Michael McGill, Sean Yao","trip_log/2021_death_valley.html"
-"Weaverville","Cabin","Feb. 19-21, 2021","Sean Yao, Michael McGill",
-"Lopez Canyon, Los Padres National Forest","Backpacking","Feb. 27-28, 2021","David Joyner, David Krawitz, Grant Parton, Peter Vanderbloomer",
-"Beal's Point Campground, Folsom Lake","Campground","Apr. 2-3, 2021","Alex Netto, Mitchell Netto, Yassi Yavari, Catherine Croft",
-"Jackass Beach, Sinkyone Wilderness","Backpacking","May 25-28, 2021","Preston Quilici",
-"Eastern Sierras, Inyo National Forest","Car Camping","Jul. 2-5, 2021","David Krawitz, Andrew Rudchenko, Preston Quilici", "trip_log/2021_eastern_sierras.html",
-"Church Creek, Big Sur","Backpacking","Jan. 15-17, 2022","Drew Taylor, Peter Vanderbloomer, Grant Parton",
-"Eel River, Mendocino National Forest","Backpacking","Feb. 19-21, 2022","Ian Good, Sean Yao, Braden, Josh, Trevor O'farrell",
-"Arroyo Seco Rd., Big Sur","Bikepacking","Mar. 26-27, 2022","Michael Young",
-"Hamilton City to Willows Fish Screen, Sacramento River","Canoeing","Apr. 30-31, 2022","Jack Christy, Natalie Cox, Doug Ward, David Krawitz",
-"Union Reservoir, Stanislaus National Forest","Canoeing","May 28-30, 2022","Doug Ward, Madi Garzoli, Jack Christy, Natalie Cox, Mason Scharf, David Krawitz, Peter Vanderbloomer, Preston Quilici, Audrey, Michael Young",
-"Sonora Pass","Car Camping","Jun. 4-5, 2022","Sean Yao, Josh Yolland",
-"Big Valley Bluff, Tahoe National Forest","Day trip","Jun., 11, 2022","David Krawitz, Jack Christy",
-"Plumas National Forest Loop","Bikepacking","Jul. 2-4, 2022","Michael Young",
-"North Fork American River Canyon, Tahoe National Forest","Car Camping","Jul. 22-24, 2022","Matt Lane",
-"Lower Wright and Deep Lake Loop, Marble Mountains Wilderness","Backpacking","Aug. 10-14, 2022","Peter Vanderbloomer, David Krawitz, Michael McGill, Michael Young",
-"Sweetwater Mountains, Humboldt Toiyabe National Forest","Car Camping","Aug. 27-28, 2022","David Krawitz",
-"Paynes and Big Blue Lake Loop, Russian Wilderness","Backpacking","Oct. 5-9, 2022","Sean Yao, Michael McGill, Michael Young",
-"Doran Beach, Bodega Bay","Campground","Jan. 21-22, 2023","Jack Christy, Natalie Cox, Doug Ward, Madi Garzoli, David Krawitz",
-"Philo Bridge to Cape Horn, Navarro River","Canoeing","Feb. 11-12, 2023","Michael Young, Jack Christy, Natalie Cox",
-"Henry Coe State Park","Bikepacking","Apr. 21-23, 2023","Michael Young",
-"Ahjumawi Lava Springs State Park","Canoeing","May 27-29, 2023","Jack Christy, Natalie Cox, Ken, Catherine, Michael McGill, Michael Young, David Krawitz",
-"Hamilton City to Willows Fish Screen, Sacramento River","Canoeing","Jun. 10-11, 2023","David Krawitz, Michael McGill, Brody",
-"North Pines Campground, Yosemite Valley","Campground","Jun. 22-25, 2023","Michael Young, Saffron Munkrass, Jack Christy",
-"Mt Shasta, Marble Mountains, Pluto's Cave","Cabin","Jul. 1-4, 2023","Sean Yao, Michael McGill, Ian Good, Matt Lane",
-"Fourth Recess Lake, John Muir Wilderness","Backpacking","Jul. 20-24, 2023","Michael Young, Michael McGill",
-"Redding to Red Bluff, Sacramento River","Rafting","Aug. 18-20, 2023","Drew Taylor, Sid Maurer, Preston Quilici, Mason Scharf, David Krawitz, Michael Young, Michael McGill, Jack Christy",
-"Granby and Grand Lake, CO","Campground","Sept. 29 - Oct. 1, 2023","Jack Glynn, Andy Sagers, Emily","trip_log/2023_grand_lake.html"
-"Bug Gulch Loop, Marble Mountains Wilderness","Backpacking","Oct. 12-15, 2023","Sean Yao, Michael McGill, Matt Lane",
-"Cache Creek","Car Camping","Oct. 21-22, 2023","Ethan Mermell, Brody Morris, Jacob Bates, Sam Benzoni",
-"Tomales Bay","Canoeing","Mar. 8-10, 2024","Jack Christy, Dave Krawitz, Michael Young, Preston Quilici, Doug Ward, Alex Christy, Michael McGill",
-"Camp Lotus","Campground","Apr. 12-14, 2024","Nat and Jack's wedding attendees",
-"Parkfield Bluegrass Festival","Campground","May 10-12, 2024","Mason Scharf, David Krawitz, Peter Vanderbloomer, Drew Taylor, Brian Clark",
-"McCloud Mushroom Festival and Salmon River","Car Camping","May 24-27, 2024","David Krawitz, Preston Quilici, Michael McGill",
-"Hamilton City to Ordbend, Sacramento River","Canoeing","Jun. 1-2, 2024","Mason Scharf, David Krawitz, Michael Young, Sean Yao, Preston Quilici, Jacob Bates, Brody Morris",
-"Beacroft Trail and French Meadows Reservoir, Tahoe National Forest","Backpacking","Jun. 14-16, 2024","Jack Stanger",
-"Sonora Pass to Kennedy Meadows, Emigrant Wilderness","Backpacking","July 4-12, 2024","Ian Good, Sean Yao, Michael McGill, Matt Lane",
-"Wildcat Campground, Point Reyes National Seashore","Bikepacking","Aug. 3-4, 2024","Michael Young, Saffron Munkrass, Jeff Phungmonkol, Mason Scharf, Noah, Jack",
-"Milton Resevoir and Gates of the Antipodes, Tahoe National Forrest","Car Camping","Aug. 17-18, 2024","David Krawitz, Matt Lane",
-"Angel Island State Park","Bikepacking","Aug. 24-25, 2024","Alex and Catherine Netto",
-"Matterhorn Peak Loop, Hoover Wilderness","Backpacking","Aug. 30 - Sept. 3, 2024","Michael Young, Mason Scharf, Michael McGill",
-"Smith Lake, Trinity Alps Wilderness","Backpacking","Oct. 3 - 7, 2024","Michael Young, Michael McGill",
-"Greenwood Creek to Folsom Lake, South Fork American River","Rafting","Oct. 26, 2024","Harrison, Austin",
-"Albion Campground","Car Camping","Dec. 30, 2024 - Jan. 1 2025","Jack Christy, Nat Christy, Preston Quilici, Mason Scharf, David Krawitz",
-"Lost Valley Trail, Big Sur","Backpacking","Jan. 17-20, 2025","Brian Clark, Drew Taylor, Mike McGill, Jake Jackson",
-"Italian Bar, Tahoe National Forest","Backpacking","Feb. 21-22, 2025","Preston Quilici, Mike McGill, Ryan Childers, Mason Scharf, Sean Yao, Matt Lane",
-"Shasta, Modoc, and Plumas National Forest Loop","Car Camping","Apr. 24-28, 2025","Preston Quilici, David Krawitz, Mike Mcgill",
-"McCloud Mushroom Festival","Car Camping","May 23-25, 2025","Preston Quilici, David Krawitz, Mason Scharf, Jack Chirsty, Natalie Christy",
-"Clarno to Cottonwood, John Day River","Rafting","May 25-30, 2025","Jack Chirsty, Natalie Christy",
-"Hamilton City to Ordbend, Sacramento River","Canoeing","May 31 - Jun. 1, 2025","Mason Scharf, David Krawitz, Preston Quilici, Jacob Bates, Brody Morris, Jack Chirsty, Natalie Christy, Audrey Whitesides, Coco, Laura, Ethan Mermell",
-"Barker Pass, Tahoe National Forrest","Car Camping","July 12 - 13, 2025","Mason Scharf, David Krawitz, Preston Quilici, Jack Chirsty, Ryan Childers, Sid Maurer",
-"Minam River Loop, Eagle Cap Wilderness, OR","Backpacking","July 18 - 27, 2025","Michael Mcgill, Jacob Bates, Jack Glynn",
-"Arroyo Seco Campground, Los Padres National Forrest","Campground","August 8 - 10, 2025","Drew Taylor, Jake Jackson, Brian Clark",
-"Swift Creek Loop, Trinity Alps Wilderness","Backpacking","August 23 - 26, 2025","Sid Maurer, Mason Scharf, Michael Young",
+Location,Type of Trip,Date,People,Link,Days,Distance (mi),Elevation (ft)
+"Peeler Lake Loop, Hoover Wilderness",Backpacking,"Jul. 26-30, 2007","Scott, Juli, Kaitlin, Kenny, Phyllis and Bret Cunningham",,4,22.4,5589
+"Chain Lakes, Yosemite National Park",Backpacking,2008,Yolland and Cunningham families,,,,
+"Smith Lake, Desolation Wilderness",Backpacking,Jul. 2010,"Kenny, Bret, and Phyllis Cunningham",,,,
+Desolation Wilderness,Backpacking,2011,"Kenny, Bret, and Phyllis Cunningham",,,,
+"South Bass Trail, Grand Canyon, AZ",Backpacking,2012,Yolland and Cunningham families,,3,14,5897
+"Twin Lakes, Desolation Wilderness",Backpacking,2013,"Kenny, Bret, and Phyllis Cunningham",,,,
+"Lake Aloha, Desolation Wilderness",Backpacking,Jun. 2014,"Mike McGill, Matt Lane, Zach Reiley",,3,19.3,3613
+"Red Mountain Basin, John Muir Wilderness",Backpacking,"Jul. 27-30, 2014",Kenny and Bret Cunningham,,4,33.3,5986
+"Glacier National Park, MT",Cabin,Sep. 2014,Phyllis and Bret Cunningham,,,,
+"Lost Coast Trail, Kings Range Wilderness",Backpacking,Apr. 2015,"Matt Lane, Jack Stanger, Zach Reiley",,4,19.9,1382
+"Sawtooth Ridge and Little Slide Canyon, Hoover Wilderness",Backpacking,Jul. 2015,"Matt Lane, Jack Stanger, Zach Reiley, Ryan Callahan",trip_log/2015_hoover.html,3,27.3,8430
+"Green and Summit Lake, Hoover Wilderness",Backpacking,Summer 2015,Kenny and Bret Cunningham,,4,19.5,5175
+"Prewitt Ridge, Big Sur",Car Camping,"Feb. 6-7, 2016","Sara Wilson, Fiona Jackson, Nicole, Natalie Cox, Jack Christy, Sid Maurer, Drew Taylor, Chris Farkas, David Krawitz",trip_log/2016_prewitt_ridge.html,,,
+Alabama Hills,Car Camping,"Feb. 13-15, 2016","Doug Ward, Gavin Shavey, Jason Adam",trip_log/2016_alabama_hills.html,,,
+"Boronda Ridge, Big Sur",Backpacking,"Feb. 27-28, 2016","Max Chacon, Jack Christy, Gavin Shavey, Jason Adam",,,,
+"Trona Pinnacles, Surprise Canyon, Red Rock Canyon State Park",Car Camping,"Apr. 1-3, 2016","Max Chacon, Sid Maurer, David Krawitz, Drew Taylor",trip_log/2016_trona.html,,,
+"Caliente Ridge Rd., Carrizo Plain National Monument",Car Camping,"Apr. 16-17, 2016","Doug Ward, Gavin Shavey, Jason Adam, Drew Taylor, Sid Maurer, David Krawitz, Jack Christy",,,,
+"Highway 1, Big Sur",Car Camping,"Apr. 23-24, 2016","Drew Taylor, Jack Christy, David Krawitz",,,,
+"Pear Lake, Sequoia National Park",Backpacking,"May 27-30, 2016","Sid Maurer, Drew Taylor, Gavin Shavey, Jason Adam",,3,19.5,5865
+"Leavitt Lake, Humboldt-Toiyabe National Forest",Car Camping,"Jul. 8-10, 2016","Matt Lane, Ian Good, Julian Billot, Sean Yao",,,,
+"Five Lakes Basin, Tahoe National Forest",Backpacking,"Jul. 16-17, 2016",Yolland and Cunningham families,,,,
+"Palisades Creek Trail, Tahoe National Forest",Backpacking,"Jul. 30, 2016","Matt Lane, Ian Good, Sean Yao, Michael McGill",,,,
+John Muir Trail,Backpacking,"Aug. 25 - Sept. 12, 2016",Jack Stanger,,20,195,45374
+"Cone Peak, Big Sur",Backpacking,"Apr. 15-16, 2017","Weston Kramer, Jason Adam",,,,
+Henry Cowell Redwoods State Park,Campground,"May 13-17, 2017","Sid Maurer, Doug Ward, Jack Christy, David Krawitz, Drew Taylor",,,,
+North Fork Campground,Campground,"Jul. 7-8, 2017","Jack Stanger, David Krawitz",,,,
+"Twin Lakes, Desolation Wilderness",Backpacking,"Jul. 21-22, 2017",Yolland and Cunningham families,,,,
+"Virginia Pass Loop, Hoover Wilderness",Backpacking,"Aug. 2-5, 2017","Matt Lane, Michael McGill",trip_log/2017_virginia_pass.html,4,16.6,4509
+"Usal Beach, Sinkyone Wilderness",Car Camping,"Aug. 18-20, 2017","Sean Yao, Ian Good",trip_log/2017_usal_beach.html,,,
+Two Rivers and Sequoia National Park,Cabin,"Nov. 4-5, 2017","Doug Ward, David Krawitz",,,,
+"Horseshoe Mesa and Hance Rapids, Grand Canyon, AZ",Backpacking,"Dec. 9-14, 2017","Max Chacon, Doug Ward, David Krawitz",trip_log/2017_grand_canyon.html,4,21.7,9962
+"Mattole Beach, Redwood National Park, and Klamath National Forest",Car Camping,"Jan. 1-5, 2018","Sean Yao, Ian Good, Matt Lane, Michael McGill",,,,
+"San Martin Top, Big Sur",Car Camping,"Feb. 17-18, 2018","Grey Liedtke, Tony",,,,
+"Temblor Range, Carrizo Plain National Monument",Car Camping,"Apr. 14-15, 2018","Madi Noet, Ella Garfield, Chloe, Mason Scharf, Peter Vanderbloomer, David Krawitz, Drew Taylor, Jeff Phungmonkol, Jack Christy",,,,
+"Big Creek Reserve and Plaskett Ridge, Big Sur",Car Camping,"May 11-13, 2018","Jack Christy, Drew Taylor, Sid Maurer, David Krawitz",,,,
+"Carrizo Trail, Big Sur",Backpacking,"May 25-28, 2018","Drew Taylor, Gavin Shavey, Jason Adam, Doug Ward, Grey Liedtke",,4,19.4,7993
+Mt Shasta,Mountaineering,"Jun. 14-15, 2018","Sid, Sid Z, and Sue Maurer",,,,
+"Ward Lake, John Muir Wilderness",Backpacking,"Jul. 27-29, 2018",Alone,,,,
+"Chalfant Lakes, John Muir Wilderness",Backpacking,"Sep. 11-15, 2018","Sean Yao, Michael McGill",,4,19.8,7693
+"Foresthill Rd., Tahoe National Forest",Car Camping,"Jan. 2-4, 2019","Sean Yao, Matt Lane, Michael McGill",,,,
+"Lopez Canyon, Los Padres National Forest",Backpacking,"Jan 19-20, 2019","David Joyner, David Krawitz, Grant Parton, Peter Vanderbloomer",,,,
+"Caliente Peak, Carrizo Plain National Monument",Backpacking,"Apr. 7-8, 2019","Jacinta Garcia, Mitch, Grey Liedtke",,,,
+"Arroyo Seco River, Big Sur",Backpacking,"Apr. 13-14, 2019","Jason Adam, Gavin Shavey",,,,
+"Silver Peak Wilderness, Big Sur",Backpacking,"May 2-5, 2019","Gavin Shavey, Jason Adam",,4,22.2,8730
+"Big Creek Reserve, Big Sur",Day trip,"May 18, 2019","Sid Maurer, Drew Taylor, Preston Quilici, Jack Christy, David Krawitz",,,,
+"Alturas Lake, Sawtooth Wilderness, ID",Backpacking,"Jun. 29-30, 2019",Alone,,,,
+"Middle Canyon, Salmon Challis National Forest, ID",Day trip,"Jul. 5, 2019",Alone,,,,
+"Copper Basin, Salmon Challis National Forest, ID",Car Camping,"Jul. 20-22, 2019",Alone,,,,
+"White Cloud Mountains, Salmon Challis National Forest, ID",Backpacking,"Jul. 26-28, 2019","John Siegal, Taylor Amato, Ketchum",,3,20.6,4555
+"Big Smoky Creek, Sawtooth National Forest, ID",Car Camping,"Aug. 2-3, 2019","Erik Clark, Sean Yao",,,,
+"Pioneer Range, Salmon Challis National Forest, ID",Backpacking,"Aug. 9-11, 2019",Alone,trip_log/2019_pioneer_range.html,,,
+"Lost River Range, Salmon Challis National Forest, ID",Backpacking,"Aug. 16-18, 2019",Will,,,,
+"Wheeler Beach, Sinkyone Wilderness",Backpacking,"Jan. 1-4, 2020","Matt Lane, Michael McGill, Sean Yao",,4,18,8120
+"Sespe Hot Springs, Los Padres National Forest",Backpacking,"Apr. 1-5, 2020","Sid Maurer, Mason Scharf",trip_log/2020_sespe.html,4,30.2,5154
+"La Porte Rd. Loop, Plumas National Forest",Car Camping,"Jul. 3-5, 2020",Sean Yao,trip_log/2020_la_porte.html,,,
+"Bull Lake Loop, Carson Iceberg Wilderness",Backpacking,"Jul. 24-27, 2020","Preston Quilici, David Krawitz",,3,13.7,3484
+"Henness Pass Rd., Tahoe National Forest",Car Camping,"Aug. 8-10, 2020","Sid Maurer, Michael Young, Jeff Phungmonkol, Walker Lambert",,,,
+"North Fork American River Canyon, Tahoe National Forest",Car Camping,"Aug. 14-16, 2020","Matt Lane, Michael McGill",,,,
+"Sonora Pass to Leavitt Meadows, Emigrant Wilderness",Backpacking,"Aug. 30 - Sep. 3, 2020","Preston Quilici, David Krawitz, Doug Ward, Michael Young",trip_log/2020_emigrant.html,4,36,6570
+Death Valley National Park,Car Camping,"Dec. 31, 2020 - Jan. 4, 2021","Matt Lane, Michael McGill, Sean Yao",trip_log/2021_death_valley.html,,,
+Weaverville,Cabin,"Feb. 19-21, 2021","Sean Yao, Michael McGill",,,,
+"Lopez Canyon, Los Padres National Forest",Backpacking,"Feb. 27-28, 2021","David Joyner, David Krawitz, Grant Parton, Peter Vanderbloomer",,3,17.2,3897
+"Beal's Point Campground, Folsom Lake",Campground,"Apr. 2-3, 2021","Alex Netto, Mitchell Netto, Yassi Yavari, Catherine Croft",,,,
+"Jackass Beach, Sinkyone Wilderness",Backpacking,"May 25-28, 2021",Preston Quilici,,3,15.5,8405
+"Eastern Sierras, Inyo National Forest",Car Camping,"Jul. 2-5, 2021","David Krawitz, Andrew Rudchenko, Preston Quilici",trip_log/2021_eastern_sierras.html,,,
+"Church Creek, Big Sur",Backpacking,"Jan. 15-17, 2022","Drew Taylor, Peter Vanderbloomer, Grant Parton",,3,11.4,4423
+"Eel River, Mendocino National Forest",Backpacking,"Feb. 19-21, 2022","Ian Good, Sean Yao, Braden, Josh, Trevor O'farrell",,3,4.9,1258
+"Arroyo Seco Rd., Big Sur",Bikepacking,"Mar. 26-27, 2022",Michael Young,,,,
+"Hamilton City to Willows Fish Screen, Sacramento River",Canoeing,"Apr. 30-31, 2022","Jack Christy, Natalie Cox, Doug Ward, David Krawitz",,,,
+"Union Reservoir, Stanislaus National Forest",Canoeing,"May 28-30, 2022","Doug Ward, Madi Garzoli, Jack Christy, Natalie Cox, Mason Scharf, David Krawitz, Peter Vanderbloomer, Preston Quilici, Audrey, Michael Young",,,,
+Sonora Pass,Car Camping,"Jun. 4-5, 2022","Sean Yao, Josh Yolland",,,,
+"Big Valley Bluff, Tahoe National Forest",Day trip,"Jun., 11, 2022","David Krawitz, Jack Christy",,,,
+Plumas National Forest Loop,Bikepacking,"Jul. 2-4, 2022",Michael Young,,,,
+"North Fork American River Canyon, Tahoe National Forest",Car Camping,"Jul. 22-24, 2022",Matt Lane,,,,
+"Lower Wright and Deep Lake Loop, Marble Mountains Wilderness",Backpacking,"Aug. 10-14, 2022","Peter Vanderbloomer, David Krawitz, Michael McGill, Michael Young",,4,15.7,6989
+"Sweetwater Mountains, Humboldt Toiyabe National Forest",Car Camping,"Aug. 27-28, 2022",David Krawitz,,,,
+"Paynes and Big Blue Lake Loop, Russian Wilderness",Backpacking,"Oct. 5-9, 2022","Sean Yao, Michael McGill, Michael Young",,4,18,5921
+"Doran Beach, Bodega Bay",Campground,"Jan. 21-22, 2023","Jack Christy, Natalie Cox, Doug Ward, Madi Garzoli, David Krawitz",,,,
+"Philo Bridge to Cape Horn, Navarro River",Canoeing,"Feb. 11-12, 2023","Michael Young, Jack Christy, Natalie Cox",,,,
+Henry Coe State Park,Bikepacking,"Apr. 21-23, 2023",Michael Young,,,,
+Ahjumawi Lava Springs State Park,Canoeing,"May 27-29, 2023","Jack Christy, Natalie Cox, Ken, Catherine, Michael McGill, Michael Young, David Krawitz",,,,
+"Hamilton City to Willows Fish Screen, Sacramento River",Canoeing,"Jun. 10-11, 2023","David Krawitz, Michael McGill, Brody",,,,
+"North Pines Campground, Yosemite Valley",Campground,"Jun. 22-25, 2023","Michael Young, Saffron Munkrass, Jack Christy",,,,
+"Mt Shasta, Marble Mountains, Pluto's Cave",Cabin,"Jul. 1-4, 2023","Sean Yao, Michael McGill, Ian Good, Matt Lane",,,,
+"Fourth Recess Lake, John Muir Wilderness",Backpacking,"Jul. 20-24, 2023","Michael Young, Michael McGill",,3,15.9,5697
+"Redding to Red Bluff, Sacramento River",Rafting,"Aug. 18-20, 2023","Drew Taylor, Sid Maurer, Preston Quilici, Mason Scharf, David Krawitz, Michael Young, Michael McGill, Jack Christy",,,,
+"Granby and Grand Lake, CO",Campground,"Sept. 29 - Oct. 1, 2023","Jack Glynn, Andy Sagers, Emily",trip_log/2023_grand_lake.html,,,
+"Bug Gulch Loop, Marble Mountains Wilderness",Backpacking,"Oct. 12-15, 2023","Sean Yao, Michael McGill, Matt Lane",,4,18.4,8169
+Cache Creek,Car Camping,"Oct. 21-22, 2023","Ethan Mermell, Brody Morris, Jacob Bates, Sam Benzoni",,,,
+Tomales Bay,Canoeing,"Mar. 8-10, 2024","Jack Christy, Dave Krawitz, Michael Young, Preston Quilici, Doug Ward, Alex Christy, Michael McGill",,,,
+Camp Lotus,Campground,"Apr. 12-14, 2024",Nat and Jack's wedding attendees,,,,
+Parkfield Bluegrass Festival,Campground,"May 10-12, 2024","Mason Scharf, David Krawitz, Peter Vanderbloomer, Drew Taylor, Brian Clark",,,,
+McCloud Mushroom Festival and Salmon River,Car Camping,"May 24-27, 2024","David Krawitz, Preston Quilici, Michael McGill",,,,
+"Hamilton City to Ordbend, Sacramento River",Canoeing,"Jun. 1-2, 2024","Mason Scharf, David Krawitz, Michael Young, Sean Yao, Preston Quilici, Jacob Bates, Brody Morris",,,,
+"Beacroft Trail and French Meadows Reservoir, Tahoe National Forest",Backpacking,"Jun. 14-16, 2024",Jack Stanger,,,,
+"Sonora Pass to Kennedy Meadows, Emigrant Wilderness",Backpacking,"July 4-12, 2024","Ian Good, Sean Yao, Michael McGill, Matt Lane",,9,52.7,10580
+"Wildcat Campground, Point Reyes National Seashore",Bikepacking,"Aug. 3-4, 2024","Michael Young, Saffron Munkrass, Jeff Phungmonkol, Mason Scharf, Noah, Jack",,,,
+"Milton Resevoir and Gates of the Antipodes, Tahoe National Forrest",Car Camping,"Aug. 17-18, 2024","David Krawitz, Matt Lane",,,,
+Angel Island State Park,Bikepacking,"Aug. 24-25, 2024",Alex and Catherine Netto,,,,
+"Matterhorn Peak Loop, Hoover Wilderness",Backpacking,"Aug. 30 - Sept. 3, 2024","Michael Young, Mason Scharf, Michael McGill",,4,18.6,7577
+"Smith Lake, Trinity Alps Wilderness",Backpacking,"Oct. 3 - 7, 2024","Michael Young, Michael McGill",,4,21.7,7783
+"Greenwood Creek to Folsom Lake, South Fork American River",Rafting,"Oct. 26, 2024","Harrison, Austin",,,,
+Albion Campground,Car Camping,"Dec. 30, 2024 - Jan. 1 2025","Jack Christy, Nat Christy, Preston Quilici, Mason Scharf, David Krawitz",,,,
+"Lost Valley Trail, Big Sur",Backpacking,"Jan. 17-20, 2025","Brian Clark, Drew Taylor, Mike McGill, Jake Jackson",,4,22.8,8673
+"Italian Bar, Tahoe National Forest",Backpacking,"Feb. 21-22, 2025","Preston Quilici, Mike McGill, Ryan Childers, Mason Scharf, Sean Yao, Matt Lane",,,,
+"Shasta, Modoc, and Plumas National Forest Loop",Car Camping,"Apr. 24-28, 2025","Preston Quilici, David Krawitz, Mike Mcgill",,,,
+McCloud Mushroom Festival,Car Camping,"May 23-25, 2025","Preston Quilici, David Krawitz, Mason Scharf, Jack Chirsty, Natalie Christy",,,,
+"Clarno to Cottonwood, John Day River",Rafting,"May 25-30, 2025","Jack Chirsty, Natalie Christy",,,,
+"Hamilton City to Ordbend, Sacramento River",Canoeing,"May 31 - Jun. 1, 2025","Mason Scharf, David Krawitz, Preston Quilici, Jacob Bates, Brody Morris, Jack Chirsty, Natalie Christy, Audrey Whitesides, Coco, Laura, Ethan Mermell",,,,
+"Barker Pass, Tahoe National Forrest",Car Camping,"Jul. 12 - 13, 2025","Mason Scharf, David Krawitz, Preston Quilici, Jack Chirsty, Ryan Childers, Sid Maurer",,,,
+"Minam River Loop, Eagle Cap Wilderness, OR",Backpacking,"Jul. 18 - 27, 2025","Michael Mcgill, Jacob Bates, Jack Glynn",,8,49.2,13382
+"Arroyo Seco Campground, Los Padres National Forrest",Campground,"Aug. 8 - 10, 2025","Drew Taylor, Jake Jackson, Brian Clark",,,,
+"Swift Creek Loop, Trinity Alps Wilderness",Backpacking,"Aug. 23 - 26, 2025","Sid Maurer, Mason Scharf, Michael Young",,4,21.6,6327
+Angel Island State Park,Bikepacking,"Sep. 27 - 28, 2025","Alex Netto, Catherine Netto",,,,
+"Marble Rim Loop, Marble Mountains Wilderness",Backpacking,"Oct. 16 - 20, 2025",Michael Mcgill,,5,27.1,8873
