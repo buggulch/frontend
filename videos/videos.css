@@ -1,0 +1,48 @@
+div.title {
+	background-color: lightgrey;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-size: 65px;
+	font-weight: bold;
+}
+
+div.subtitle { 
+	background-color: lightgrey;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "Arial", Helvetica, sans-serif;
+	}
+
+body {
+	background-image:url("los_padres.jpg");
+	background-repeat: repeat;
+	margin-right: 7%;
+	margin-left: 7%;
+}
+
+h1 {
+	background-color: lightgrey;
+	border: 3px solid;
+	margin-top: 5px;
+	margin-bottom:0px;
+	font-size: 30px;
+	padding: 5px;
+	}
+
+h2 {
+	background-color: lightgrey;
+	margin-top: 5px;
+	margin-bottom:0px;
+	font-size: 25px;
+	}
+	
+div.sect {
+	border: 3px solid;
+	background-color: lightgrey;
+	margin-top: 5px;
+	padding: 5px;
+}
+

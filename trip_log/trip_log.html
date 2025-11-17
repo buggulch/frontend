@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<!-- tab and search result title -->
+		<title>Trip log - buggulch.com</title>
+	
+		<!-- page description -->
+		<meta name="description" content="An ongoing record of outdoor adventure trips that I have done throughout my life.">
+
+		<!-- author -->
+		<meta name="author" content="John Cunningham">
+		
+		<!-- permits scaling for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- specifying character set -->
+		<meta charset="utf-8">
+		
+		<!-- links stylesheet -->
+		<link rel="stylesheet" href="trip_log.css">
+		
+		<!-- Analytics Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EL6CGFTBRT"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-EL6CGFTBRT');
+		</script>
+		
+	</head>
+
+<body>
+	
+<div class="title">
+	<a href="../index.html" style="text-decoration: none; color: black;"> buggulch.com</a><br>
+</div>	
+			
+<div class="subtitle">
+	Outdoor adventure website
+</div>	
+		
+<h1>Trip Log</h1>
+		
+<div class="sect">
+
+<i>Ongoing record of outdoor adventure trips taken throughout my lifetime. Maps, photos, and descriptions linked for select trips.</i> <br><br>
+
+<table id="tripLogTable">
+  <thead>
+      <tr>
+          <th>Location</th>
+          <th>Type of Trip</th>
+          <th>Date</th>
+      </tr>
+  </thead>
+  <tbody>
+      <!-- Trip log entries will be inserted here by JavaScript -->
+  </tbody>
+</table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script>
+  async function fetchCSV() {
+      try {
+          const response = await fetch('trip_log.csv');
+          if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
+          return await response.text();
+      } catch (error) {
+          console.error('There has been a problem with your fetch operation:', error);
+      }
+  }
+
+  function parseCSV(data) {
+      const parsed = Papa.parse(data, { header: true, skipEmptyLines: true });
+      return parsed.data;
+  }
+
+  function generateTable(trips) {
+      const tbody = document.querySelector('#tripLogTable tbody');
+      trips.forEach(trip => {
+          const row = document.createElement('tr');
+          const locationCell = document.createElement('td');
+          const location = trip['Location'] || '';
+          const link = trip['Link'] || '';
+          if (link) {
+              const a = document.createElement('a');
+              a.href = link;
+              a.textContent = location;
+              locationCell.appendChild(a);
+          } else {
+              locationCell.textContent = location;
+          }
+          row.appendChild(locationCell);
+          row.innerHTML += `
+              <td>${trip['Type of Trip'] || ''}</td>
+              <td>${trip['Date'] || ''}</td>
+          `;
+          tbody.appendChild(row);
+      });
+  }
+
+  async function loadTrips() {
+      const csvData = await fetchCSV();
+      if (csvData) {
+          const trips = parseCSV(csvData);
+          generateTable(trips);
+      }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadTrips);
+</script>
+
+</div>		
+		
+		<footer style='display:flex; justify-content:space-between; margin-top: 15px;'>
+			
+			<br>
+			
+			<div align='center'>
+				<a href="../index.html">
+					<div style='background-color: lightgrey; padding: 5px 10px; width: fit-content; border-radius: 15px;'>Back to home</div>
+				</a>
+			</div>
+			
+			<div align="right">
+				<script src="https://efreecode.com/js.js" id="eXF-buggulch-0" async defer></script> 
+			</div>
+			
+		</footer>	
+	</body>
+</html>	
+
+
+
+		<!-- <footer style='display:flex; justify-content:space-between; margin-top: 15px;'> -->
+			
+			<!-- <div align="left"> -->
+			<!-- <b>© 2024 John Cunningham</b> -->
+			<!-- </div> -->
+			
+			<!-- <div align='center'> -->
+				<!-- <a href="../index.html"> -->
+					<!-- <div style='background-color: lightgrey; padding: 5px 10px; width: fit-content; border-radius: 15px;'>Back to home</div> -->
+				<!-- </a> -->
+			<!-- </div> -->
+			
+			<!-- <div align="right"> -->
+				<!-- <script src="https://efreecode.com/js.js" id="eXF-buggulch-0" async defer></script>  -->
+			<!-- </div> -->
+		
+		<!-- </footer>	 -->
